@@ -50,7 +50,7 @@ export default function App() {
         <div style={styles.section}>
           <h2>💼 Past Work</h2>
           <ul>
-            <li>✔ Service Promotions / Reels / Content</li>
+            <li>✔ Service Promotion / Reels / Content</li>
             <li>✔ Product Promotion</li>
             <li>✔ Academic Content</li>
             <li>✔ Product Review Campaigns</li>
