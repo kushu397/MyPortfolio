@@ -1,5 +1,5 @@
 
-    import { useState } from "react";
+import { useState } from "react";
 import profile from "./assets/kiri.jpeg";
 
 export default function App() {
@@ -32,14 +32,14 @@ export default function App() {
 
         {/* STATS */}
         <div style={styles.stats}>
-          <div style={styles.box}>
+          {/* <div style={styles.box}>
             <h2>50K+</h2>
             <p>Followers</p>
-          </div>
-          <div style={styles.box}>
+          </div> */}
+          {/* <div style={styles.box}>
             <h2>2M+</h2>
             <p>Views</p>
-          </div>
+          </div> */}
           <div style={styles.box}>
             <h2>12+</h2>
             <p>Brand Deals</p>
@@ -50,7 +50,7 @@ export default function App() {
         <div style={styles.section}>
           <h2>💼 Past Work</h2>
           <ul>
-            <li>✔ Service Promotion / Reels / Content</li>
+            <li>✔ Service Promotions / Reels / Content</li>
             <li>✔ Product Promotion</li>
             <li>✔ Academic Content</li>
             <li>✔ Product Review Campaigns</li>
@@ -69,7 +69,12 @@ export default function App() {
         {/* CONTACT */}
         <div style={styles.contactBox}>
           <h2>📩 Hire Me / Work With Me</h2>
-          <p>DM me on Instagram,Messenger or email for collaborations</p>
+     <button style={styles.btn}> <a href="mailto:example@example.com?subject=Hello&body=Hi%20there!" style={styles.link} >
+            Send Email
+          </a>
+      </button><br />
+          <span>⬆️click here to send email</span>
+          <p>DM me on Instagram and Messenger for collaborations</p>
           <p style={styles.smallText}>
             ⚡ Response time: 24–48 hours
           </p>
@@ -106,8 +111,9 @@ const styles = {
     justifyContent: "center",
     alignItems: "center",
     fontFamily: "Arial",
-    background: "linear-gradient(135deg, #ff9a9e, #fad0c4, #a18cd1)",
-    padding: 20
+    background: "linear-gradient(135deg, #5bb7c3, #fad0c4, #dba57a)",
+    padding: 20,
+
   },
 
   card: {
@@ -207,6 +213,13 @@ const styles = {
   caption: {
     marginTop: 15,
     fontStyle: "italic",
-    color: "#444"
+    color: "#444",
+  },
+  link: {
+    color: "#43012b",
+  textDecoration: 'none',
+  },
+  btn: {
+color: "#db90c9", 
   }
 };
